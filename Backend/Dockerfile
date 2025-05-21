@@ -2,7 +2,8 @@
 FROM node:v18.20.8
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /Backend
+
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
