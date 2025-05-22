@@ -1,0 +1,84 @@
+/* Base layout */
+.Dashboardcont {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+/* Leftbar */
+.Dashboardcont > :first-child {
+  width: 22%;
+  border-right: 1px solid #e0e0e0;
+  background-color: #f9fafb;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+ 
+}
+
+/* Mid (chat area) */
+.Dashboardcont > :nth-child(2) {
+  width: 56%;
+   min-width: 0;
+  background-color: #fff;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border-right: 1px solid #e0e0e0;
+  
+   
+}
+
+/* Right panel (AI assistant) */
+.Dashboardcont > :last-child {
+  width: 22%;
+  background-color: #f9fafb;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.Dashboardcont > *::-webkit-scrollbar {
+  width: 6px;
+}
+.Dashboardcont > *::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.Dashboardcont > *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Responsive: tablets and below */
+@media (max-width: 1024px) {
+  .Dashboardcont {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Dashboardcont > :first-child,
+  .Dashboardcont > :nth-child(2),
+  .Dashboardcont > :last-child {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .Dashboardcont > :last-child {
+    border-bottom: none;
+  }
+}
+
+/* Responsive: phones */
+@media (max-width: 600px) {
+  .Dashboardcont > :first-child,
+  .Dashboardcont > :nth-child(2),
+  .Dashboardcont > :last-child {
+    padding: 12px 10px;
+  }
+}

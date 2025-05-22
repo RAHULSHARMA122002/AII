@@ -1,0 +1,65 @@
+.navbar {
+  width: 100%;
+  background-color: transparent; /* ← Transparent background */
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px); /* Optional: adds a soft blur effect */
+  border: 2px rgb(123, 255, 0) solid;
+}
+
+.navbar-container {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  
+  justify-content: space-between;
+   border: 2px blue solid;
+}
+
+
+
+.navbar-right {
+  
+  margin-right:240px ;
+  border: 2px red solid;
+}
+
+.navbar-center{
+   margin-right:410px ;
+   font-size: 30px;
+   font-weight: bold
+}
+
+.navbar-left{
+   
+   font-size: 30px;
+   font-weight: bold
+}
+
+.navbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.navbar-user {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.navbar-tab {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.navbar-tab.active {
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+}
